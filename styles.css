@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body::after {
+  background: url("https://sportshub.cbsistatic.com/i/2022/06/01/d8c79aa3-ea91-42e4-ac9e-da39ded25b6d/rockstar-games.jpg");
+  content: "";
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  width: auto;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+body {
+  background-color: #000;
+}
+
+div {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container {
+  max-width: 60%;
+  margin: 3.125rem auto 0 auto;
+  padding: 5em;
+}
+
+#survey-form {
+  background-color: rgba(184, 184, 184, 0.75);
+  font-size: 1.25rem;
+  padding: 1em;
+  border-radius: 2.5em;
+}
+
+.header {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.form-control{
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    border-radius: .4em;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">GTA Survey Form</h1>
+        <p id="description" class="description-text-center">Thank you for sharing your thoughts</p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="Name" id="name-label">Name</label>
+          <input type="text" name="Name" id="name" class="form-control" placeholder="Enter Your Name" required />
+        </div>
+        <div class="form-group">
+          <label for="Email" id="email-label">Email</label>
+          <input type="email" name="Email" id="email" class="form-control" placeholder="Enter Your Email" required />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age <span class="clue">(optional)</span></label>
+          <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="age" />
+        </div>
+        <div class="form-group">
+          <p>Which option best describes your current player level</p>
+          <select name="Player Level" id="dropdown" class="form-control" required>
+            <option disabled selected value>Select Current Player Level</option>
+            <option value="Newb">Newb</option>
+            <option value="I Suck">I Suck</option>
+            <option value="I'm ok, I can hold my own">I'm ok, I can hold my own</option>
+            <option value="I'm better than all my friends">I'm better than all my friends</option>
+            <option value="I'm a BEAST, no-one can touch me">I'm a BEAST, no-one can touch me</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Would you recommend GTA to your friends?</p>
+          <label> <input type="radio" name="user-recommend" class="input-radio" value="definitely" checked /> Definitely </label>
+          <label> <input type="radio" name="user-recommend" class="input-radio" value="I guess" /> I Guess </label>
+          <label> <input type="radio" name="user-recommend" class="input-radio" value="NOPE" /> NOPE </label>
+        </div>
+        <div class="form-group">
+          <p>What is your favorite GTA Series?</p>
+          <select name="favorite game" id="Dropdown" class="form-control" required>
+            <option disabled selected value>Favorite GTA Series</option>
+            <option value="GTA III">GTA III</option>
+            <option value="GTA Vice City">GTA Vice City</option>
+            <option value="GTA San Andreas">GTA San Andreas</option>
+            <option value="GTA IV">GTA IV</option>
+            <option value="GTA V">GTA V</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>What city would you like in the next part of the series?</p>
+          <span class="clue">(check all that apply)</span>
+          <label> <input type="checkbox" name="prefer" value="Chicago" class="input-checkbox" /> Chicago </label>
+          <label> <input type="checkbox" name="prefer" value="Chicago" class="input-checkbox" /> Atlanta </label>
+          <label> <input type="checkbox" name="prefer" value="Chicago" class="input-checkbox" /> New York </label>
+          <label> <input type="checkbox" name="prefer" value="Chicago" class="input-checkbox" /> Miami </label>
+          <label> <input type="checkbox" name="prefer" value="Chicago" class="input-checkbox" /> San Francisco </label>
+          <label> <input type="checkbox" name="prefer" value="Chicago" class="input-checkbox" /> Somewhere Else </label>
+        </div>
+        <div class="form-group">
+          <p>Any Comments or suggestions</p>
+          <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comments here..."></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
